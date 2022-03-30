@@ -1,0 +1,209 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Montserrat, monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: white;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(90deg,rgb(18, 18, 18,0.5), rgb(18, 18, 18,0.5)), url("https://images.unsplash.com/photo-1592588253414-887759037c2a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.div-container{
+  width: 100%;
+  margin: 0 auto 0 auto;
+}
+.div-form{
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  background: rgb(0, 0, 0, 0.8);
+}
+
+header{
+  text-align: center;
+}
+h1{
+  font-size: 2.5rem;
+  margin-top: 2rem;;
+  margin-bottom: 0.1rem;
+}
+p{
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0.5rem;
+}
+#description{
+  font-style: italic;
+  font-size: 1rem;
+}
+label{
+  display: flex;
+  align-items: baseline;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+}
+span{
+  font-size: 0.9rem;
+}
+.form-content{
+  padding: 0.15rem;
+  margin: 0.8rem auto 0.8rem auto;
+}
+.input-controller{
+  display: block;
+  width: 100%;
+  height: 2.4rem;
+  padding: 0.2rem 0.6rem;
+}
+
+[type="radio"],
+[type="checkbox"]{
+  margin-right: 0.3rem;
+}
+.star{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+
+.rating-rowing,
+.rating-bike,
+.rating-free-weights,
+.rating-treadmill,
+.rating-shoulderpress,
+.rating-elliptical-trainer,
+.rating-balance-trainer,
+.rating-exercise-ball
+{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-bottom: 0.15rem;
+}
+
+.rating-rowing ion-icon,
+.rating-bike ion-icon,
+.rating-free-weights ion-icon,
+.rating-treadmill ion-icon,
+.rating-shoulderpress ion-icon,
+.rating-elliptical-trainer ion-icon,
+.rating-exercise-ball ion-icon,
+.rating-balance-trainer ion-icon,ion-icon
+{
+  color: #707070;
+  transition: 0.3s all;
+}
+.rating-rowing ion-icon:hover,
+.rating-bike ion-icon:hover,
+.rating-free-weights ion-icon:hover,
+.rating-treadmill ion-icon:hover,
+.rating-shoulderpress ion-icon:hover,
+.rating-elliptical-trainer ion-icon:hover,
+.rating-exercise-ball ion-icon:hover,
+.rating-balance-trainer ion-icon:hover
+{
+  color: #f1c40f;
+}
+.star1:hover ~ ion-icon{
+  color: #f1c40f;
+}
+.star2:hover ~ ion-icon{
+  color: #f1c40f;
+}
+.star3:hover ~ ion-icon{
+  color: #f1c40f;
+}
+.star4:hover ~ ion-icon{
+  color: #f1c40f;
+}
+.star5:hover ~ ion-icon{
+  color: #f1c40f;
+}
+
+#submit{
+  background: rgb(55, 6, 101);
+  color: white;
+}
+#comments-suggestions{
+  display: block;
+  height: 100px;
+  resize: vertical;
+  width: 100%;
+}
+
+/* mobiles */
+@media (min-width: 320px){
+  .rating-rowing,
+  .rating-bike,
+  .rating-free-weights,
+  .rating-treadmill,
+  .rating-shoulderpress,
+  .rating-elliptical-trainer,
+  .rating-balance-trainer,
+  .rating-exercise-ball{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0.15rem;
+  }
+  .div-container{
+    max-width: 400px;
+  }
+}
+/* tablets */
+@media (min-width: 480px){
+  .div-container{
+    max-width: 450px;
+  }
+    .rating-rowing,
+  .rating-bike,
+  .rating-free-weights,
+  .rating-treadmill,
+  .rating-shoulderpress,
+  .rating-elliptical-trainer,
+  .rating-balance-trainer,
+  .rating-exercise-ball{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  padding-bottom: 0.15rem;
+  }
+  .star{
+    margin-right: 1.2rem;
+  }
+    ion-icon{
+    padding: 0.15rem;
+  }
+}
+/* Laptops */
+@media (min-width: 750px){
+  .div-container{
+    max-width: 650px;
+  }
+  .star{
+    margin-right: 1.2rem;
+  }
+  ion-icon{
+    padding: 0.2rem;
+  }
+}
+/* PC */
+@media (min-width: 1000px){
+  .div-container{
+    max-width: 950px;
+  }
+}

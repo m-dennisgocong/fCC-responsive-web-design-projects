@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form</title>
+</head>
+<body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Poppins:wght@300;900&display=swap" rel="stylesheet">
+<div class="div-container">
+  <header>
+    <h1 id="title"> Fitness Suite Survey</h1>
+    <p id="description"> We know we can do better, let us know where we should start! <br> Thank you for taking time to help us improve. </p>
+  </header>
+  <div class="div-form">
+    <form id="survey-form">
+      <div class="form-content">
+        <label id="name-label" for="name"> Name </label>
+        <input type="text" id="name" class="input-controller" name="name" placeholder="Enter your name"required>
+      </div>
+      <div class="form-content">
+        <label id="email-label" for="email"> Email</label>
+        <input type="email" id="email" class="input-controller" name="email" placeholder="Enter your email"required>
+      </div>
+      <div class="form-content">
+        <label id="number-label" for="number"> Age <span>(optional)</span></label>
+        <input type="number" id="number" class="input-controller" name="number" max="99" min="10" placeholder="Age" required>
+      </div>
+      <div class="form-content">
+      <label for="dropdown"> How often do you go to gym?</label>
+      <select type="text" id="dropdown" class="input-controller" placeholder="sample">
+        <option disable selected> Choose from the following</option>
+        <option value="student">1 time per week</option>
+        <option value="full-time-job">2-3 times per week </option>
+        <option value="full-time-learner">4-5 times per week</option>
+        <option value="prefered-not-to-say">6+ times per week</option>
+      </select>
+      </div>
+      <div class="form-content">
+        <label for="gender">Gender</label>
+        <label for="male"> <input type="radio" id="male" name="gender" value="male"> Male</label>
+        <label for="female"> <input type="radio" id="female" name="gender" value="female"> Female </label>
+      </div>
+
+      <div class="form-content">
+        <label for="routine">What time do you normally prefer to attend to gym? </label>
+        <label for="morning"> <input type="radio" id="morning" name="routine" value="definitely"> Morning</label>
+        <label for="afternoon"> <input type="radio" id="afternoon" name="routine" value="afternoon"> Afternoon </label>
+        <label for="night"> <input type="radio" id="night" name="routine" value="night"> Nignt</label>
+      </div>
+      <div class="form-content">
+        <label for="improvements"> Why do you go to gym? <span>(Check all that apply)</span></label>
+        <label for="lifestyle"> <input type="checkbox" id="lifestyle" name="improvements" value="lifestyle"> Lifestyle</label>
+        <label for="rehabilitation"> <input type="checkbox" id="rehabilitation" name="improvements" value="rehabilitation">Rehabilitation</label>
+        <label for="strength-training"> <input type="checkbox" id="strength-training" name="improvements" value="strength-training">Strength Training</label>
+        <label for="weight-loss"> <input type="checkbox" id="weight-loss" name="improvements" value="weight-loss">Weight Loss</label>
+        <label for="health-improvement"> <input type="checkbox" id="health-improvement" name="improvements" value="health-improvement">Health Improvement</label>
+        <label for="social-environment"> <input type="checkbox" id="social-environment" name="improvements" value="social-environment">Social Environment</label>
+        <label for="mobility"> <input type="checkbox" id="mobility" name="improvements" value="mobility">Mobility</label>
+        <label for="flexibility"> <input type="checkbox" id="flexibility" name="improvements" value="flexibility">Flexibility</label>
+        <label for="endurance"> <input type="checkbox" id="endurance" name="improvements" value="endurance">Endurance</label>
+      </div>
+      <div class="form-ratings">
+        <label for="ratings">How do you rate your experience of the equipments? </label>
+        <div class="rating-rowing">
+          <label for="star">Rowing Machine</label>
+          <div class="star">
+          <ion-icon name="star" class="star1"></ion-icon>
+          <ion-icon name="star" class="star2"></ion-icon>
+          <ion-icon name="star" class="star3"></ion-icon>
+          <ion-icon name="star" class="star4"></ion-icon>
+          <ion-icon name="star" class="star5"></ion-icon>
+          </div>
+         </div>
+        <div class="rating-bike">
+          <label for="star">Exercise Bike</label>
+          <div class="star">
+          <ion-icon name="star" class="star1"></ion-icon>
+          <ion-icon name="star" class="star2"></ion-icon>
+          <ion-icon name="star" class="star3"></ion-icon>
+          <ion-icon name="star" class="star4"></ion-icon>
+          <ion-icon name="star" class="star5"></ion-icon>
+          </div>
+        </div>
+        <div class="rating-free-weights">
+          <label for="star">Free Weights</label>
+          <div class="star">
+          <ion-icon name="star" class="star1"></ion-icon>
+          <ion-icon name="star" class="star2"></ion-icon>
+          <ion-icon name="star" class="star3"></ion-icon>
+          <ion-icon name="star" class="star4"></ion-icon>
+          <ion-icon name="star" class="star5"></ion-icon>
+          </div>
+        </div>
+        <div class="rating-treadmill">
+          <label for="star">Treadmill</label>
+          <div class="star">
+          <ion-icon name="star" class="star1"></ion-icon>
+          <ion-icon name="star" class="star2"></ion-icon>
+          <ion-icon name="star" class="star3"></ion-icon>
+          <ion-icon name="star" class="star4"></ion-icon>
+          <ion-icon name="star" class="star5"></ion-icon>
+          </div>
+        </div>
+        <div class="rating-shoulderpress">
+          <label for="star">Shoulder Press Machine</label>
+          <div class="star">
+          <ion-icon name="star" class="star1"></ion-icon>
+          <ion-icon name="star" class="star2"></ion-icon>
+          <ion-icon name="star" class="star3"></ion-icon>
+          <ion-icon name="star" class="star4"></ion-icon>
+          <ion-icon name="star" class="star5"></ion-icon>
+          </div>
+        </div>
+        <div class="rating-elliptical-trainer">
+          <label for="star">Elliptical Trainer</label>
+          <div class="star">
+          <ion-icon name="star" class="star1"></ion-icon>
+          <ion-icon name="star" class="star2"></ion-icon>
+          <ion-icon name="star" class="star3"></ion-icon>
+          <ion-icon name="star" class="star4"></ion-icon>
+          <ion-icon name="star" class="star5"></ion-icon>
+          </div>
+        </div>
+        <div class="rating-balance-trainer">
+          <label for="star">Balance Trainer</label>
+          <div class="star">
+          <ion-icon name="star" class="star1"></ion-icon>
+          <ion-icon name="star" class="star2"></ion-icon>
+          <ion-icon name="star" class="star3"></ion-icon>
+          <ion-icon name="star" class="star4"></ion-icon>
+          <ion-icon name="star" class="star5"></ion-icon>
+          </div>
+        </div>
+        <div class="rating-exercise-ball">
+          <label for="star">Exercise Ball</label>
+          <div class="star">
+          <ion-icon name="star" class="star1"></ion-icon>
+          <ion-icon name="star" class="star2"></ion-icon>
+          <ion-icon name="star" class="star3"></ion-icon>
+          <ion-icon name="star" class="star4"></ion-icon>
+          <ion-icon name="star" class="star5"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <div class="form-content">
+        <label for="comments-suggestions">Any comments or suggestions?</label>
+        <textarea name="comments-suggestions" id="comments-suggestions"
+        placeholder="Enter your comment here..."> </textarea>
+      </div>
+      <div class="form-content">
+        <button type="submit" class="input-controller" id="submit" value="submit">submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>

@@ -133,3 +133,54 @@ ul{
 }
 
 /* Desktop 1024px - 1200px */
+@media (min-width: 1024px){
+
+  /* hero-section */
+  #solo-pic{
+    margin-top: 10vmin;
+    margin-right: 35vmin;
+  }
+  .title-div{
+    width: 45vmin;
+    top: 30%;
+    right: 15%;
+    padding: 0 3vmin;
+  }
+  .title-div p{
+    font-size: 1.3em;
+  }
+  #title{
+    font-size: 3em;
+    line-height: 1em;
+    padding-bottom: 1.5vmin;
+  }
+  /* time-line section */
+  #time-line{
+    font-size: 1.8em;
+  }
+  li{
+    font-size: 1.1em;
+  }
+  #tribute-info{
+    padding: 0 10vmin 2vmin 10vmin;
+
+  }
+  /* group-pic */
+  .group-pic{
+    padding: 5vmin 2.5vmin 2vmin 2.5vmin;
+  }
+  /* qoute-div section */
+  #prime-minster-image{
+    margin-left: 2.5vmin;
+    height: 45vh;
+  }
+  .qoute{
+    margin-top: -5vmin;
+    text-align: left;
+    font-size: 1.2em;
+  }
+  /* link-section */
+  .link-div h4{
+    font-size: 1.1em;
+  }
+}

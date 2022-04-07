@@ -4,7 +4,7 @@ This repo will contain all my Responsive Web Design Project. By working on these
 
 ## The 5 following projects:
 
-- [ ] Tribute Page
+- [X] Tribute Page <a href="https://codepen.io/dennisgocong/full/NWaLmbB" target="_blank"> View here!</a>
 - [X] Survey Form <a href="https://codepen.io/dennisgocong/full/xxXNKvK" target="_blank"> View here!</a>
 - [ ] Product Landing Page
 - [ ] Technical Documentation Page

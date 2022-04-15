@@ -6,28 +6,58 @@
 body{
 
 }
-.nav-bar-div{
+#header{
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  height: 10vh;
-  background-color: white;
+  top: 0;
+  max-height: 75px;
+  background-color: #fff;
 }
-#img-header{
+#header-img{
   height: 100%;
+  max-width: 35vw;
 }
 #nav-bar{
-  display: none;
+  position: fixed;
+  right:0;
+  top: 0;
+  background-color: white;
+  height: 100vh;
+  width: 50%;
+  z-index: 999;
+  text-transform: uppercase;
+  transform: translateX(100%);
+  transition: transform .5s ease-in-out;
+}
+#nav-bar a{
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 100%;
+}
+#nav-bar a:hover{
+  background-color: grey;
+}
+#nav-bar #close{
+  width: 2em;
+  margin: 3em 2em 0.1em 2em;
+}
+#nav-bar ul{
+  list-style-type: none;
+  padding: 0;
+  margin-top: 3em;
+  margin-left: 1.5em;
 }
 svg{
   margin-top: 0.85em;
   min-width: 3em;
   min-height: 3em;
+  cursor: pointer;
 }
 .hero-section{
-  height: 70vh;
-  width: 100%;
-  margin-bottom: 1em;
+  height: 70vh;;
+  width: 100vw;
+  margin-top: 0;
   background-color: #FDD7AA;
 }
 .hero-img{
@@ -69,52 +99,65 @@ form #email{
   height: 8.5vmin;
   width: 80vmin;
 }
-.limited-time-div{
-  height: 100vh;
+#vid-container{
+  height: 40vh;
   width: 100%;
+}
+#video{
+  height: 100%;
+  width: 100%;
+}
+#limited-time-div{
+  background-color: #FDD7AA;
+}
+#limited-time-div h3{
   text-align: center;
+  padding: 1em;
 }
 .pic{
   width: 100%;
-  height: 70%;
+  height: 70vh;
   object-fit: cover;
   object-position: left;
 }
 .banner-lastday{
   width: 100%;
-  height: auto;
+  height: 30vh;
+  object-fit: cover;
+  object-position: center;
 }
-.top-pick-div{
+#top-pick-div{
   height: 60vh;
-  width: 100%;
-  text-align: center;
   background-color: #fff;
 }
-.top-pick-div h3{
-  background-color: pink;
+#top-pick-div h3{
+  text-align: center;
+  background-color: #fff;
+  padding: 1.5em;
 }
 .scrolling-wrapper{
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
 }
+
 .scrolling-wrapper .card{
   display: inline-block;
 }
-.scrolling-wrapper-flexbox{
+.scrolling-wrapper{
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
 }
-.scrolling-wrapper-flexbox .card{
+.scrolling-wrapper .card{
   flex: 0 0 auto;
   margin-right: 1em;
 }
-.scrolling-wrapper, .scrolling-wrapper-flexbox{
+.scrolling-wrapper, .scrolling-wrapper{
   width: 100%;
   -webkit-overflow-scrolling: touch;
 }
-.scrolling-wrapper::-webkit-scrollbar, .scrolling-wrapper-flexbox::-webkit-scrollbar{
+.scrolling-wrapper::-webkit-scrollbar, .scrolling-wrapper::-webkit-scrollbar{
   display: none;
 }
 .card{
@@ -123,16 +166,138 @@ form #email{
 }
 .card img{
   width: 100%;
-  height: 35vh;
+  height: 30vh;
 }
 .card h3{
-  padding: 1.5em;
-  background-color: pink;
+  padding: 1em;
   font-size: 0.95rem;
 }
 .finaldays-div img{
   width: 100%;
-  height: 15vh;
+  height: 20vh;
   object-fit: cover;
   object-position: center;
+}
+
+/* 480px - 780px */
+@media (min-width: 480px){
+  .hero-text{
+    position: absolute;
+    bottom: 12em;
+    left: 5em;
+    background-color: white;
+    height: 28vh;
+    width: 65vw;
+    border-radius: 2em;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1em;
+  }
+  form #submit{
+    margin: 0.8em 0 0 0;
+    height: 2em;
+    width: 25em;
+  }
+  form #email{
+    height: 2em;
+    width: 25em;
+  }
+  .pic{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+    padding: 0 0;
+  }
+  .banner-lastday{
+    width: 100%;
+    height: 39vh;
+    object-fit: cover;
+    object-position: center;
+  }
+  #top-pick-div h3{
+    padding: 0.3em;
+  }
+  .finaldays-div img{
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    object-position: center;
+  }
+  #top-pick-div{
+    height: 50vh;
+    background-color: #fff;
+  }
+}
+/* 720px-1024px */
+@media (min-width: 720px){
+  .hero-img{
+    position: absolute;
+    height: 45%;
+    width: 45%;
+    z-index: -0;
+    right: 2em;
+    top: 10em;
+  }
+  .hero-text{
+    position: absolute;
+    bottom: 21em;
+    margin: 0 1.5em;
+    background-color: white;
+    height: 27vh;
+    width: 45vh;
+    border-radius: 7%;
+    z-index: 1;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1em;
+  }
+  form #submit{
+    margin: 0.8em 0 1em 0;
+    height: 2em;
+    width: 20em;
+  }
+  form #email{
+    height: 2em;
+    width: 20em;
+  }
+  #vid-container{
+    height: 50vh;
+    width: 100%;
+  }
+  .pic{
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+    object-position: center;
+    padding:0;
+  }
+  .banner-lastday{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    padding:0;
+  }
+  #top-pick-div{
+    height: 50vh;
+  }
+  .finaldays-div img{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+/* Desktop 900px - 1200px */
+@media (min-width: 900px){
+  .hero-section{
+
+  }
 }

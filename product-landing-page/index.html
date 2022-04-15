@@ -13,23 +13,31 @@
 <body>
 <div id="container">
   <header id="header">
-    <div class="nav-bar-div">
-      <a href="#" class="logo-link"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmgMrwCsdnzuZ00sIv8YoRAwqrdy_xCHOvGg&usqp=CAU" alt="" id="header-img"></a>
-      <nav id="nav-bar">
-        <ul>
-          <li><a href="#limited-time-div" class="nav-link">Limited Time</a></li>
-          <li><a href="#top-pick-div" class="nav-link">Top Pick</a></li>
-          <li><a href="#vid-container" class="nav-link">Show</a></li>
-        </ul>
-      </nav>
-      <svg width="48px" height="48px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <a href="#" class="logo-link"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmgMrwCsdnzuZ00sIv8YoRAwqrdy_xCHOvGg&usqp=CAU" alt="" id="header-img"></a>
+    <nav id="nav-bar">
+      <svg id="close"viewBox="0 0 72 72" id="emoji" xmlns="http://www.w3.org/2000/svg">
+        <g id="color"/>
+        <g id="hair"/>
+        <g id="skin"/>
+        <g id="skin-shadow"/>
+        <g id="line">
+          <line x1="17.5" x2="54.5" y1="17.5" y2="54.5" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+          <line x1="54.5" x2="17.5" y1="17.5" y2="54.5" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+      </svg>
+
+      <ul>
+        <li><a href="#limited-time-div" class="nav-link">Limited Time</a></li>
+        <li><a href="#top-pick-div" class="nav-link">Top Pick</a></li>
+        <li><a href="#vid-container" class="nav-link">Show</a></li>
+      </ul>
+    </nav>
+    <svg width="48px" height="48px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect width="48" height="48" fill="white" fill-opacity="0.01"/>
       <path d="M7.94977 11.9498H39.9498" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
       <path d="M7.94977 23.9498H39.9498" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
       <path d="M7.94977 35.9498H39.9498" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-
-    </div>
+    </svg>
   </header>
   <div class="hero-section">
     <div class="hero-text">
@@ -42,8 +50,9 @@
     </div>
     <img src="https://images7.alphacoders.com/100/1001356.jpg" alt="" class="hero-img">
   </div>
+  <section class="more-info">
   <div id="vid-container">
-    <iframe id="video" width="360" height="360" src="https://www.youtube.com/embed/cSMB63GMfWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe id="video" src="https://www.youtube.com/embed/cSMB63GMfWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <div id="limited-time-div">
     <h3>Time Limited</h3>
@@ -78,7 +87,7 @@
   <div class="finaldays-div">
     <img src="https://www.victoriassecret.com/images/vsweb/d2395ee7-8919-4a18-bf59-3dbb21441968/040822-hp-feattop-desktop-1.jpg" alt="">
   </div>
-
+  </section>
 </div>
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">

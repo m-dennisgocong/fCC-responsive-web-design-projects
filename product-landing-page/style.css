@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body{
-
+  font-family: 'Cinzel', serif;
 }
 #header{
   display: flex;
@@ -15,13 +16,13 @@ body{
 }
 #header-img{
   height: 100%;
-  max-width: 35vw;
+  max-width: 100%;
 }
 #nav-bar{
   position: fixed;
   right:0;
   top: 0;
-  background-color: white;
+  background-color: #fff;
   height: 100vh;
   width: 50%;
   z-index: 999;
@@ -36,7 +37,7 @@ body{
   width: 100%;
 }
 #nav-bar a:hover{
-  background-color: grey;
+  background-color: #404040;
 }
 #nav-bar #close{
   width: 2em;
@@ -55,52 +56,36 @@ svg{
   cursor: pointer;
 }
 .hero-section{
-  height: 70vh;;
+  height: 80vh;;
   width: 100vw;
   margin-top: 0;
-  background-color: #FDD7AA;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.hero-section h1,p{
+  text-align: center;
+  line-height: 1.5em;
+}
+.hero-section h1{
+  text-align: center;
+  font-size: 1.3em;
+}
+.hero-section h2{
+  text-align: center;
+  font-size: 1em;
+  order: 2;
 }
 .hero-img{
   max-width: 100%;
-  height: 80%;
+  height: 60vh;
   object-fit: cover;
   object-position: center;
-  z-index: -1;
+  padding: 1.3em 0;
 }
-.hero-text{
-  position: absolute;
-  bottom: 12em;
-  margin: 0 1.5em;
-  background-color: white;
-  height: 30vh;
-  border-radius: 7%;
-}
-.hero-text h1{
-  text-align: center;
-  padding: 0.2em 0.1em 0 0.1em;
-  font-size: 1.8rem;
-}
-.hero-text p{
-  padding: 0.2em 1em 1em;
-  font-size: 1rem;
-}
-form{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 1em;
-}
-form #submit{
-  margin: 0.8em 0 0 0;
-  height: 8vmin;
-  width: 35vmin;
-}
-form #email{
-  height: 8.5vmin;
-  width: 80vmin;
-}
+
 #vid-container{
-  height: 40vh;
+  height: 50vh;
   width: 100%;
 }
 #video{
@@ -108,7 +93,7 @@ form #email{
   width: 100%;
 }
 #limited-time-div{
-  background-color: #FDD7AA;
+  background-color: #ffc6ef;
 }
 #limited-time-div h3{
   text-align: center;
@@ -116,18 +101,30 @@ form #email{
 }
 .pic{
   width: 100%;
-  height: 70vh;
-  object-fit: cover;
-  object-position: left;
+  height: 100%;
 }
-.banner-lastday{
-  width: 100%;
-  height: 30vh;
-  object-fit: cover;
-  object-position: center;
+.send-email{
+  text-align: center;
+  padding: 1em 0.5em;
+}
+.send-email h1,p{
+  color: #000;
+}
+form{
+  margin: 1em;
+}
+form #submit{
+  height: 2.5em;
+  width: 7.8em;
+  background-color: #ff3333;
+  color: #fff;
+}
+form #email{
+  height: 2.5em;
+  width: 15em;
 }
 #top-pick-div{
-  height: 60vh;
+  height: 85vh;
   background-color: #fff;
 }
 #top-pick-div h3{
@@ -140,7 +137,6 @@ form #email{
   overflow-y: hidden;
   white-space: nowrap;
 }
-
 .scrolling-wrapper .card{
   display: inline-block;
 }
@@ -160,144 +156,99 @@ form #email{
 .scrolling-wrapper::-webkit-scrollbar, .scrolling-wrapper::-webkit-scrollbar{
   display: none;
 }
-.card{
-  border-right: 0.2em solid gray;
-  border-left: : 0.2em solid gray;
-}
 .card img{
   width: 100%;
-  height: 30vh;
+  height: 50vh;
+  object-fit: cover;
+  object-position: center;
 }
 .card h3{
   padding: 1em;
   font-size: 0.95rem;
+  color: #404040;
+}
+.card strong{
+  color: #000;
+}
+.card span{
+  color: #ff0000;
 }
 .finaldays-div img{
   width: 100%;
-  height: 20vh;
+  height: 30vh;
   object-fit: cover;
   object-position: center;
 }
 
-/* 480px - 780px */
-@media (min-width: 480px){
-  .hero-text{
-    position: absolute;
-    bottom: 12em;
-    left: 5em;
-    background-color: white;
-    height: 28vh;
-    width: 65vw;
-    border-radius: 2em;
+/* 680px */
+@media (min-width: 680px){
+  .hero-section{
+    max-width: 100%;
+    height: 100vh;
   }
-  form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 1em;
-  }
-  form #submit{
-    margin: 0.8em 0 0 0;
-    height: 2em;
-    width: 25em;
-  }
-  form #email{
-    height: 2em;
-    width: 25em;
-  }
-  .pic{
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
-    object-position: center;
-    padding: 0 0;
-  }
-  .banner-lastday{
-    width: 100%;
-    height: 39vh;
-    object-fit: cover;
-    object-position: center;
-  }
-  #top-pick-div h3{
-    padding: 0.3em;
-  }
-  .finaldays-div img{
-    width: 100%;
-    height: 25vh;
-    object-fit: cover;
-    object-position: center;
-  }
-  #top-pick-div{
-    height: 50vh;
-    background-color: #fff;
-  }
-}
-/* 720px-1024px */
-@media (min-width: 720px){
   .hero-img{
-    position: absolute;
-    height: 45%;
-    width: 45%;
-    z-index: -0;
-    right: 2em;
-    top: 10em;
-  }
-  .hero-text{
-    position: absolute;
-    bottom: 21em;
-    margin: 0 1.5em;
-    background-color: white;
-    height: 27vh;
-    width: 45vh;
-    border-radius: 7%;
-    z-index: 1;
-  }
-  form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 1em;
-  }
-  form #submit{
-    margin: 0.8em 0 1em 0;
-    height: 2em;
-    width: 20em;
-  }
-  form #email{
-    height: 2em;
-    width: 20em;
+    max-width: 100%;
+    height: 80vh;
   }
   #vid-container{
-    height: 50vh;
+    height: 70vh;
     width: 100%;
   }
-  .pic{
-    width: 100%;
-    height: auto;
-    object-fit: fill;
-    object-position: center;
-    padding:0;
+  form #submit{
+    height: 3em;
+    width: 9em;
   }
-  .banner-lastday{
+  form #email{
+    height: 3em;
+    width: 25em;
+  }
+}
+/* 920px */
+@media (min-width: 920px){
+  .hero-section{
+    display: grid;
+    grid-template-columns: auto 55%;
+    grid-template-rows: 20% 5% 5% 5% 5% 50%;
+    margin-bottom: -5em;
+  }
+  .intro{
+    grid-row: 2/3;
+    font-size: 1.2em;
+  }
+  .title{
+    grid-row: 3/4;
+    font-size: 1.3em;
+  }
+  .by{
+    grid-row: 4/5;
+    font-size: 1.3em;
+  }
+  .new-level{
+    grid-row: 5/6;
+    font-size: 2em;
+  }
+  .hero-img{
+    grid-column: 2/3;
+    grid-row: 1/7;
+  }
+  #vid-container{
+    height: 100vh;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    padding:0;
+    background-color: #fff;
+  }
+  form #email{
+    width: 35em;
   }
   #top-pick-div{
-    height: 50vh;
+    height: 85vh;
+  }
+  .pic{
+    padding: 0 5em;
   }
   .finaldays-div img{
     width: 100%;
-    height: 30vh;
+    height: 45vh;
     object-fit: cover;
     object-position: center;
-  }
-}
-/* Desktop 900px - 1200px */
-@media (min-width: 900px){
-  .hero-section{
-
   }
 }

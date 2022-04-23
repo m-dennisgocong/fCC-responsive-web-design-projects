@@ -217,7 +217,7 @@ form #email{
   /*nav bar*/
   #nav-bar{
     transform: translateX(0);
-    position: unsit;
+    position: unset;
     display: block;
     width: auto;
     height: auto;

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
 :root{
   --text-primary: #1b1b1b;
   --text-secondary: #4e4e4e;
@@ -21,17 +23,18 @@ nav{
   width: 100%;
   padding: 0 1.5em;
   height: 3em;
-  background-color: var(--background-primary);
+  background-color: #d1d1d1;
 }
 nav header{
-  font-size: 1.6em;
+  font-size: 1.8em;
 }
 .nav-link{
   text-decoration: none;
   display: block;
   font-size: 1.2em;
+  font-family: "Ubuntu",sans-serif;
   color: var(--text-primary);
-  padding: 0 0.5em;
+  padding: 0.3em 0.5em;
 }
 .nav-link:hover{
   background-color: var(--text-secondary);
@@ -49,8 +52,8 @@ nav header{
   transition: transform .5s ease-in-out;
 }
 #close{
-  width: 4em;
-  height: 4em;
+  width: 3.5em;
+  height: 3.5em;
   cursor: pointer;
   margin-left: -0.2em;
 }
@@ -64,20 +67,25 @@ nav header{
   font-family: sans-serif;
 }
 .main-section header{
-  font-size: 1.4em;
-  padding: 1em 0;
+  font-size: 1.5em;
+  padding: 1.5em 0 0.5em 0;
+}
+.main-section article{
+  padding-bottom: 0em;
 }
 article p{
   line-height: 1.5em;
   text-align: justify;
-  padding-bottom: 1.5em;
+  font-family: "Ubuntu",sans-serif;
+  padding-bottom: 1em;
 }
 article ul,ol{
   padding: 0 1.5em 1em 2.5em;
   line-height: 1.7em;
+  font-family: "Ubuntu",sans-serif;
 }
 table, td,th {
-  border: 1px solid #ddd;
+  border: 0.2em solid #ddd;
   text-align: left;
 }
 table {
@@ -85,7 +93,11 @@ table {
   width: 100%;
 }
 th, td {
-  padding: 0.5em;
+  padding: 0.8em;
+  font-family: "Ubuntu",sans-serif;
+}
+.hello-script{
+  color: var(--text-primary-red);
 }
 p code{
   text-align: unset;
@@ -94,7 +106,8 @@ code{
   display: block;
   background-color: #eee;
   border: 1px solid #999;
-  padding: 1.5em;
+  padding: 1em;
+  margin: 0.5em;
 }
 .nav-bar-open{
   transform: translateX(0%);

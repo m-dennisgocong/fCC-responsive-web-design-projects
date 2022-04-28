@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 :root{
   --text-primary: #1b1b1b;
   --text-secondary: #4e4e4e;
@@ -17,16 +17,27 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--background-primary)
+}
 nav{
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 0 1.5em;
   height: 3em;
-  background-color: #d1d1d1;
+  background-color: #000;
 }
 nav header{
   font-size: 1.8em;
+  font-family: serif;
+  font-style: bold;
+  margin-left: 0.3em;
+  color: #fff;
+}
+header span{
+  color: var(--text-primary-red);
 }
 .nav-link{
   text-decoration: none;
@@ -58,31 +69,28 @@ nav header{
   margin-left: -0.2em;
 }
 #menu{
-  margin-right: -0.5em;
+  fill:none;
+  stroke: white;
   cursor: pointer;
 }
 #main-doc{
-  padding: 1em 1.5em 2em 1.5em;
+  margin: 0.5em 2em 1em 2em;
   background-color: var(--background-primary);
-  font-family: sans-serif;
 }
 .main-section header{
   font-size: 1.5em;
-  padding: 1.5em 0 0.5em 0;
-}
-.main-section article{
-  padding-bottom: 0em;
+  padding: 1em 0 0.7em 0;
+  font-family: 'Inter', sans-serif;
 }
 article p{
   line-height: 1.5em;
+  font-size: 1em;
   text-align: justify;
-  font-family: "Ubuntu",sans-serif;
-  padding-bottom: 1em;
+  padding-bottom: 0.7em;
 }
 article ul,ol{
   padding: 0 1.5em 1em 2.5em;
   line-height: 1.7em;
-  font-family: "Ubuntu",sans-serif;
 }
 table, td,th {
   border: 0.2em solid #ddd;
@@ -93,21 +101,20 @@ table {
   width: 100%;
 }
 th, td {
-  padding: 0.8em;
-  font-family: "Ubuntu",sans-serif;
+  padding: 0.3em;
 }
 .hello-script{
   color: var(--text-primary-red);
 }
-p code{
-  text-align: unset;
-}
 code{
+  text-align: unset;
   display: block;
   background-color: #eee;
   border: 1px solid #999;
-  padding: 1em;
-  margin: 0.5em;
+  padding: 1em 1em;
+  margin: 1em;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 .nav-bar-open{
   transform: translateX(0%);

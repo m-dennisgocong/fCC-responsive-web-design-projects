@@ -119,3 +119,20 @@ code{
 .nav-bar-open{
   transform: translateX(0%);
 }
+
+/*  680px */
+@media (min-width: 680px) {
+  #main-doc{
+    margin: 2em 4em;
+  }
+  nav{
+    padding: 0 3.5em;
+  }
+  th, td {
+    padding: 0.8em;
+  }
+  .nav-menu{
+  width: 50%;
+  }
+}
+/*  920px */

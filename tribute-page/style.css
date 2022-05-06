@@ -77,14 +77,14 @@ ul{
   }
   .title-div{
     position: absolute;
-    width: 35vmin;
+    width: 50vmin;
     top: 25%;
-    right: 10%;
-    padding: 0 3vmin;
+    right: 12%;
+    padding: 0 2vmin;
   }
   #solo-pic{
     margin-top: 10vmin;
-    margin-right: 15vmin;
+    margin-right: 25vmin;
   }
   #title{
     font-size: 2.5em;
@@ -121,7 +121,7 @@ ul{
     text-align: left;
   }
   #prime-minster-image{
-    height: 30vh;
+    height: 65vh;
     width: auto;
   }
   /*link-div*/
@@ -138,12 +138,15 @@ ul{
   /* hero-section */
   #solo-pic{
     margin-top: 10vmin;
-    margin-right: 35vmin;
+    margin-right: 73vmin;
+  }
+  #solo-image{
+    height: 95vh;
   }
   .title-div{
-    width: 45vmin;
+    width: 55vmin;
     top: 30%;
-    right: 15%;
+    right: 22%;
     padding: 0 3vmin;
   }
   .title-div p{
@@ -162,7 +165,7 @@ ul{
     font-size: 1.1em;
   }
   #tribute-info{
-    padding: 0 10vmin 2vmin 10vmin;
+    padding: 12vmin 10vmin 2vmin 10vmin;
 
   }
   /* group-pic */
@@ -172,7 +175,8 @@ ul{
   /* qoute-div section */
   #prime-minster-image{
     margin-left: 2.5vmin;
-    height: 45vh;
+    height: 75vh;
+
   }
   .qoute{
     margin-top: -5vmin;

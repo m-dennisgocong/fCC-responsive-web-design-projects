@@ -1,18 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+}
+
 header{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   max-height: 65px;
   width: 100%;
+  padding: 0 0.25em;
+  background-color: #fff;
+}
+header h1{
+  font-size: 1.4em;
+  margin-left: 1.1em;
+  font-weight: 700;
+}
+.s{
+  color: rgb(243, 36, 36);
+}
+#navbar{
+  position: fixed;
+  top:0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  transform: translateX(100%);
+}
+#menu-list li,a{
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 1.3em;
+  display: block;
+  margin: 0 0.5em 0;
 }
 #welcome-section{
   width: 100%;
   height: 100vh;
-  padding: 10em 1.5em;
+  padding: 10em 2em;
+}
+#welcome-section h1{
+  font-size: 1.5em;
+  line-height: 1.8em;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+}
+#welcome-section #my-name{
+  background-color: rgb(243, 36, 36,0.2);
+}
+#my-name:hover{
+  color: #fff;
+  text-shadow: 1px 1px 1px #000, 0 -1px 1px #000, 1px 1px 1px #000,
+  -1px 0 0 #000, 1px 1px 0 #000, 1px 0 0 #000, 0 -1px 0 #000;
+}
+#welcome-section #rule{
+  font-size: 1.40em;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000, 0 -1px 1px #000, 1px 1px 1px #000,
+  -1px 0 0 #000, 1px 1px 0 #000, 1px 0 0 #000, 0 -1px 0 #000;
+}
+#welcome-section p{
+  font-size: 1.1em;
+}
+#welcome-section svg{
+  position: absolute;
+  bottom: 1em;
+  left: 1.5em;
+  width: 3em;
+  height: 5em;
 }

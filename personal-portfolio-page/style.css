@@ -8,7 +8,6 @@ body{
   font-family: "Montserrat", sans-serif;
   background-color: #fff;
 }
-
 header{
   display: flex;
   justify-content: space-between;
@@ -22,7 +21,7 @@ header{
 }
 header h1{
   font-size: 1.4em;
-  margin-left: 1.1em;
+  margin-left: 1.2em;
   font-weight: 700;
 }
 .s{
@@ -46,7 +45,7 @@ header h1{
 #welcome-section{
   width: 100%;
   height: 100vh;
-  padding: 10em 2em;
+  padding: 11em 2em;
 }
 #welcome-section h1{
   font-size: 1.5em;
@@ -78,4 +77,61 @@ header h1{
   left: 1.5em;
   width: 3em;
   height: 5em;
+}
+
+#projects{
+  padding: 5em 2em 0 2em;
+}
+#projects h2{
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 0 0 0.5em 0.5em;
+}
+.project-tile{
+  height: 65vh;
+  width: 100%;
+  /* background-color: #92C7F7; */
+  background-image: linear-gradient(to right, rgb(58, 58, 58,.8), #92C7F7);
+  margin-bottom: 1.5em;
+}
+#projects a:nth-child(3){
+  /* background-color: #FBE7C6; */
+  background-image: linear-gradient(to right, rgb(58, 58, 58,.8), #FBE7C6);
+}
+#projects a:nth-child(4){
+  /* background-color: #B4F8C8; */
+  background-image: linear-gradient(to right, rgb(58, 58, 58,.8), #B4F8C8);
+}
+#projects a:nth-child(5){
+  /* background-color: #FFAEBC; */
+  background-image: linear-gradient(to right, rgb(58, 58, 58,.8), #FFAEBC);
+}
+
+.project-img{
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.project-tile p{
+  padding: 1.3em;
+  text-align: center;
+  font-size: 0.9em;
+  color: #000;
+}
+#contacts{
+  padding-top: 4em;
+  height: 35vh;
+  text-align: center;
+}
+#contacts ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-top: 1.2em;
+}
+
+#contacts svg{
+  width: 3em;
+  height: 3em;
 }

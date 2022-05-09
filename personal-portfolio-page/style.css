@@ -27,20 +27,28 @@ header h1{
 .s{
   color: rgb(243, 36, 36);
 }
-#navbar{
+nav{
   position: fixed;
   top:0;
   right: 0;
   width: 50%;
   height: 100vh;
+  z-index: 999;
   transform: translateX(100%);
+  transition: transform .5s ease-in-out;
+  background-color: #fff;
 }
-#menu-list li,a{
+nav li,a{
   text-decoration: none;
   list-style-type: none;
-  font-size: 1.3em;
+  font-size: 1.25em;
+  color: #000000;
   display: block;
-  margin: 0 0.5em 0;
+  margin: 0 0.5em 1em 0.5em;
+}
+nav svg{
+  width: 3.5em;
+  height: 3.5em;
 }
 #welcome-section{
   width: 100%;
@@ -88,7 +96,7 @@ header h1{
   padding: 0 0 0.5em 0.5em;
 }
 .project-tile{
-  height: 65vh;
+  height: 62vh;
   width: 100%;
   /* background-color: #92C7F7; */
   background-image: linear-gradient(to right, rgb(58, 58, 58,.8), #92C7F7);
@@ -114,7 +122,7 @@ header h1{
   object-position: top;
 }
 .project-tile p{
-  padding: 1.3em;
+  padding: 1em;
   text-align: center;
   font-size: 0.9em;
   color: #000;
@@ -130,8 +138,13 @@ header h1{
   list-style-type: none;
   margin-top: 1.2em;
 }
-
 #contacts svg{
   width: 3em;
   height: 3em;
+}
+svg{
+  cursor: pointer;
+}
+.nav-bar-open{
+  transform: translateX(0%);
 }

@@ -4,7 +4,7 @@ This repo will contain all my Responsive Web Design Project. By working on these
 
 ## Objective and User Stories
 
-Each of the project have different objective and user stories. I will be given a sample app and build it with my own personal style but make sure to fulfill the user stories and get all of the test pass.
+Each of the project have different objective and user stories. I will be given a sample app and build it with my own personal style and make sure to fulfill the user stories and get all of the test pass.
 
 ## The 5 following projects:
 

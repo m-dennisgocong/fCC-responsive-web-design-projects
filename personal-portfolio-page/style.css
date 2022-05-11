@@ -16,7 +16,7 @@ header{
   top: 0;
   max-height: 65px;
   width: 100%;
-
+  z-index: 9999;
   background-color: #fff;
 }
 header h1{
@@ -50,6 +50,9 @@ nav svg{
   width: 3.5em;
   height: 3.5em;
 }
+header #menu{
+  margin-right: 1em;
+}
 #welcome-section{
   width: 100%;
   height: 100vh;
@@ -82,7 +85,7 @@ nav svg{
 #welcome-section svg{
   position: absolute;
   bottom: 1em;
-  left: 1.27em;
+  left: 1.23em;
   width: 3em;
   height: 5em;
 }
@@ -96,11 +99,11 @@ nav svg{
   padding: 0 0 0.5em 0.5em;
 }
 .project-tile{
-  height: 62vh;
+  height: 65vh;
   width: 100%;
   /* background-color: #92C7F7; */
   background-image: linear-gradient(to right, rgb(58, 58, 58,.8), #92C7F7);
-  margin-bottom: 1.5em;
+  margin-bottom: 2.5em;
 }
 #projects a:nth-child(3){
   /* background-color: #FBE7C6; */
@@ -116,16 +119,19 @@ nav svg{
 }
 
 .project-img{
-  height: 50vh;
+  height: 48vh;
   width: 100%;
   object-fit: cover;
   object-position: top;
 }
 .project-tile p{
-  padding: 1em;
+  padding: 1em 0;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: #000;
+}
+.project-tile span{
+  font-weight: bold;
 }
 #contacts{
   padding-top: 4em;
@@ -149,12 +155,21 @@ svg{
   transform: translateX(0%);
 }
 
-@media (min-width: 670px){
-  .container{
-    margin: 0 2em;
+@media (min-width: 680px){
+  #projects{
+    padding:5em 5em;
+  }
+  #contacts{
+    padding:2em 5em;
+  }
+  #welcome-section{
+    padding: 8em 5em;
   }
   header #menu{
-    margin-right: 5em;
+    margin-right: 4em;
+  }
+  header h1{
+    margin-left: 3.5em;
   }
   #welcome-section h1{
     font-size: 2em;
@@ -167,14 +182,68 @@ svg{
     font-weight: 800;
   }
   #welcome-section p{
-    font-size: 1.33em;
+    font-size: 1.25em;
+    margin-right: 0.8em;
   }
   #welcome-section svg{
     position: absolute;
     bottom: 0;
-    left: 3em;
+    left: 4em;
     width: 5em;
     height: 10em;
   }
   .project-tile{margin-bottom: 2.7}
+}
+@media (min-width: 920px){
+
+  nav{
+    position: unset;
+    transform: translateX(0);
+    height: auto;
+    width: auto;
+    background: none;
+    margin-top: 2em;
+    margin-right: 3.2em;
+  }
+  nav ul{
+    display: flex;
+    font-size: 0.8em;
+    color: #000000;
+  }
+  #menu,#close{
+    display: none;
+  }
+  #welcome-section{
+    padding-top: 11em;
+  }
+  #welcome-section #rule{
+    font-size: 2em;
+  }
+  #projects .project-tile{
+    display: flex;
+  }
+  .left-picture{
+    margin: 3em 0;
+    height: 45vh;
+    width: 40vw;
+    object-fit: cover;
+    object-position: top right;
+  }
+  .bottom-picture{
+    align-self: flex-end;
+    margin-left:2em;
+    height: 50vh;
+    width: 37vw;
+    object-fit: cover;
+    object-position: top right;
+  }
+  .project-tile p{
+    padding-left: 2.5em;
+    align-self: center;
+    text-align: left;
+    line-height: 1.5em;
+  }
+  .project-tile .project-title{
+    font-weight: bold;
+  }
 }

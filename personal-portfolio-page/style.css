@@ -88,6 +88,7 @@ header #menu{
   left: 1.23em;
   width: 3em;
   height: 5em;
+  animation: arrowMove 1s alternate-reverse infinite;
 }
 
 #projects{
@@ -255,12 +256,12 @@ svg{
     padding-right: 5em;
     padding-left: 5em;
   }
-  #welcome-section{
+  /* #welcome-section{
     padding-top: 9.3em;
-  }
+  } */
   #welcome-section,#projects,#contacts{
-    margin-right: 5em;
-    margin-left: 5em;
+    padding-right: 10em;
+    padding-left: 10em;
   }
   #welcome-section svg{
     margin-left: 5em;
@@ -271,6 +272,13 @@ svg{
   #welcome-section p{
     font-size: 1.5em;
   }
+}
 
-
+@keyframes arrowMove {
+  from{
+    transform: translateY(-40px);
+  }
+  to{
+    transform: translateY(0);
+  }
 }

@@ -54,6 +54,10 @@ nav svg{
 header #menu{
   margin-right: 1em;
 }
+.nav-items:hover{
+  border-bottom: 0.150em solid;
+}
+
 #welcome-section{
   width: 100%;
   height: 100vh;

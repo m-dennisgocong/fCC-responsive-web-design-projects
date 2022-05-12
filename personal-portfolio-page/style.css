@@ -134,15 +134,16 @@ header #menu{
   font-weight: bold;
 }
 #contacts{
-  padding-top: 4em;
+  padding-top: 6.5em;
   height: 35vh;
   text-align: center;
+  font-size: 0.8em;
 }
 #contacts ul{
   display: flex;
   justify-content: center;
   list-style-type: none;
-  margin-top: 1.2em;
+  margin-top: 1em;
 }
 #contacts svg{
   width: 3em;
@@ -156,14 +157,9 @@ svg{
 }
 
 @media (min-width: 680px){
-  #projects{
-    padding:5em 5em;
-  }
-  #contacts{
-    padding:2em 5em;
-  }
+
   #welcome-section{
-    padding: 8em 5em;
+    padding: 11em 5em;
   }
   header #menu{
     margin-right: 4em;
@@ -192,10 +188,12 @@ svg{
     width: 5em;
     height: 10em;
   }
+  #projects{padding:5em 5em;}
   .project-tile{margin-bottom: 2.7}
+
+  #contacts{padding:2em 5em;padding-top: 4.5em}
 }
 @media (min-width: 920px){
-
   nav{
     position: unset;
     transform: translateX(0);
@@ -242,8 +240,37 @@ svg{
     align-self: center;
     text-align: left;
     line-height: 1.5em;
+    font-size: 0.95em;
   }
   .project-tile .project-title{
     font-weight: bold;
   }
+  #contacts{
+    font-size: 0.95em;
+  }
+}
+
+@media (min-width: 1200px){
+  header{
+    padding-right: 5em;
+    padding-left: 5em;
+  }
+  #welcome-section{
+    padding-top: 9.3em;
+  }
+  #welcome-section,#projects,#contacts{
+    margin-right: 5em;
+    margin-left: 5em;
+  }
+  #welcome-section svg{
+    margin-left: 5em;
+  }
+  #welcome-section h1{
+    font-size: 2.2em;
+  }
+  #welcome-section p{
+    font-size: 1.5em;
+  }
+
+
 }

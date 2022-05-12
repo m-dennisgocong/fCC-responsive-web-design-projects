@@ -49,6 +49,7 @@ nav li,a{
 nav svg{
   width: 3.5em;
   height: 3.5em;
+  cursor: pointer;
 }
 header #menu{
   margin-right: 1em;
@@ -149,10 +150,9 @@ header #menu{
 #contacts svg{
   width: 3em;
   height: 3em;
-}
-svg{
   cursor: pointer;
 }
+
 .nav-bar-open{
   transform: translateX(0%);
 }

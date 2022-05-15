@@ -13,4 +13,4 @@ This repo will contain all my Responsive Web Design Project. By working on these
 ## Certification
 
 Upon completion of the five following projects I will earn a certification
-- [X] <a href="https://codepen.io/dennisgocong/full/NWaLmbB" target="_blank"> Responsive Web Design Certification </a>
+- [X] <a href="https://www.freecodecamp.org/certification/gocs/responsive-web-design"> Responsive Web Design Certification </a>

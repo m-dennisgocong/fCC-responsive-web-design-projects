@@ -2,19 +2,15 @@
 
 This repo will contain all my Responsive Web Design Project. By working on these projects, I will get the chance to apply all the skills, principles, and concepts I have learned from: HTML, CSS, Visual Design, Accessibility, and more.
 
-## Objective and User Stories
-
-Each of the project have different objective and user stories. I will be given a sample app and build it with my own personal style and make sure to fulfill the user stories and get all of the test pass.
-
 ## The 5 following projects:
 
-- [X] Tribute Page <a href="https://codepen.io/dennisgocong/full/NWaLmbB" target="_blank"> View here!</a>
-- [X] Survey Form <a href="https://codepen.io/dennisgocong/full/xxXNKvK" target="_blank"> View here!</a>
-- [X] Product Landing Page <a href="https://codepen.io/dennisgocong/full/BaJEKja" target="_blank"> View here!</a>
-- [X] Technical Documentation Page <a href="https://codepen.io/dennisgocong/full/VwyogOx" target="_blank"> View here!</a>
-- [ ] Personal Portfolio Webpage
+- [X] Tribute Page <a href="https://github.com/m-dennisgocong/fCC-responsive-web-design-projects/tree/main/tribute-page" target="_blank"> View here!</a>
+- [X] Survey Form <a href="https://github.com/m-dennisgocong/fCC-responsive-web-design-projects/tree/main/survey-form" target="_blank"> View here!</a>
+- [X] Product Landing Page <a href="https://github.com/m-dennisgocong/fCC-responsive-web-design-projects/tree/main/product-landing-page" target="_blank"> View here!</a>
+- [X] Technical Documentation Page <a href="https://github.com/m-dennisgocong/fCC-responsive-web-design-projects/tree/main/technical-doc-page" target="_blank"> View here!</a>
+- [X] Personal Portfolio Webpage <a href="https://github.com/m-dennisgocong/fCC-responsive-web-design-projects/tree/main/personal-portfolio-page" target="_blank"> View here!</a>
 
 ## Certification
 
 Upon completion of the five following projects I will earn a certification
-- [ ] Responsive Web Design Certification
+- [X] <a href="https://codepen.io/dennisgocong/full/NWaLmbB" target="_blank"> Responsive Web Design Certification </a>

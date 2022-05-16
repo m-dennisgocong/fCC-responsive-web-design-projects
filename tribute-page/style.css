@@ -44,8 +44,8 @@ body{
   padding: 0 5vmin;
 }
 #time-line{
-  padding-top: 5vmin;
-  padding-bottom: 2.5vmin;
+  padding-top: 4em;
+  padding-bottom: 3em;
 }
 .qoute{
   padding: 5vmin 5vmin;
@@ -57,11 +57,16 @@ ul{
 .title-div p, #img-caption,li,q{
   font-family: 'Poppins', sans-serif;
 }
-
+.link-div{
+  margin: 4em 1em 4em 1em;
+}
 /* tablets 480px-720px */
 @media (min-width: 480px){
   #solo-pic{
     padding: 0 15vmin;
+  }
+  .qoute-div{
+    padding: 3em 1em;
   }
   .link-div{
     padding: 0 5vmin;
@@ -69,6 +74,7 @@ ul{
 }
 /* lap-top 720px-1024px */
 @media (min-width: 720px){
+
   /*hero-section*/
   .hero-section{
     display: flex;
@@ -79,12 +85,12 @@ ul{
     position: absolute;
     width: 50vmin;
     top: 25%;
-    right: 12%;
+    right: 4em;
     padding: 0 2vmin;
   }
   #solo-pic{
-    margin-top: 10vmin;
-    margin-right: 25vmin;
+    margin: 5em;
+    margin-right: 7em;
   }
   #title{
     font-size: 2.5em;
@@ -100,6 +106,7 @@ ul{
   /* group-pic */
   #img-div{
     padding: 5vmin 10vmin 2vmin 10vmin;
+    font-size: 1.3em;
   }
   #image{
     padding-bottom: 1vmin;
@@ -107,16 +114,24 @@ ul{
   #img-caption{
     font-size: 0.85em;
   }
+  #tribute-info{
+    font-size: 1.1em;
+    margin: -2em 4em 4em 4em;
+  }
+  #time-line{
+    font-size: 1.5em;
+  }
 
   /*qoute-div*/
   .qoute-div{
     display: flex;
-    margin-top: 5vmin;
+    margin: 4em 4em;
     padding: 10vmin 5vmin;
     align-items: center;
     justify-content: center;
   }
   .qoute{
+    font-size: 1.2em;
     margin-left: -5vmin;
     text-align: left;
   }
@@ -126,9 +141,7 @@ ul{
   }
   /*link-div*/
   .link-div{
-    font-size: 0.85em;
-    margin: -5vmin 0;
-    padding-bottom: 5vmin;
+    font-size: 1.1em;
   }
 }
 
@@ -138,15 +151,15 @@ ul{
   /* hero-section */
   #solo-pic{
     margin-top: 10vmin;
-    margin-right: 73vmin;
+    margin-right: 57vmin;
   }
   #solo-image{
-    height: 95vh;
+    height: 95vmin;
   }
   .title-div{
     width: 55vmin;
     top: 30%;
-    right: 22%;
+    right: 20%;
     padding: 0 3vmin;
   }
   .title-div p{
@@ -165,26 +178,35 @@ ul{
     font-size: 1.1em;
   }
   #tribute-info{
-    padding: 12vmin 10vmin 2vmin 10vmin;
+    margin-right: 10em;
+    margin-left: 10em;
+    padding: 1.5em 3.5em;
 
   }
   /* group-pic */
   .group-pic{
-    padding: 5vmin 2.5vmin 2vmin 2.5vmin;
+    margin: 5em 5em;
+  }
+  #img-caption{
+    padding: 1em 3em;
+    font-size: 0.9em;
   }
   /* qoute-div section */
+  .qoute-div{
+    margin: 3em 9em;
+  }
   #prime-minster-image{
-    margin-left: 2.5vmin;
+    margin-left: 2em;
     height: 75vh;
-
   }
   .qoute{
-    margin-top: -5vmin;
+    margin-top: -3em;
     text-align: left;
     font-size: 1.2em;
   }
   /* link-section */
-  .link-div h4{
-    font-size: 1.1em;
+  .link-div{
+    margin: 5em 4em 4em 4em;
+    font-size: 1.2em;
   }
 }

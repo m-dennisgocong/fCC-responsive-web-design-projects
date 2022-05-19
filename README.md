@@ -12,5 +12,7 @@ This repo will contain all my Responsive Web Design Project. By working on these
 
 ## Certification
 
-Upon completion of the five following projects I will earn a certification
-- [X] <a href="https://www.freecodecamp.org/certification/gocs/responsive-web-design"> Responsive Web Design Certification </a>
+Upon completion of the five following projects I will earn Responsive Web Design Certification 
+
+- <img src = "freeCodeCamp_ResponsiveWebDesign_Certificate.png">
+- <a href="https://www.freecodecamp.org/certification/gocs/responsive-web-design"> Certification Link! </a>

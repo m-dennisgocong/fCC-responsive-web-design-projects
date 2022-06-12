@@ -1,16 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 :root{
-  --text-primary: #1b1b1b;
   --text-secondary: #4e4e4e;
-  --text-inactive: hsla(0,0%,62%,0.6509803921568628);
-  --text-link: #0069c2;
   --background-primary: #fff;
   --background-secondary: #f9f9fb;
   --text-primary-red: #d30038;
-  --text-primary-green: #007936;
-  --text-primary-blue: #0069c2;
-  --text-primary-yellow: #746a00;
+
 }
 *{
   padding: 0;

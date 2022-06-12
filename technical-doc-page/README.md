@@ -1,6 +1,6 @@
 ## Technical Documentation Page
 
-JavaScript Documentaion Page<a href="https://codepen.io/dennisgocong/full/VwyogOx" target="_blank">Live Demo</a>
+JavaScript Documentaion Page <a href="https://codepen.io/dennisgocong/full/VwyogOx" target="_blank"> Live Demo</a>
 
 ### Objective
 

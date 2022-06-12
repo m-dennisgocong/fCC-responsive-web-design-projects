@@ -4,6 +4,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: "Montserrat", sans-serif;
   background-color: #fff;
@@ -19,9 +24,10 @@ header{
   z-index: 9999;
   background-color: #fff;
 }
-header h1{
-  font-size: 1.4em;
-  margin-left: 1.45em;
+header #logo-name{
+  font-size: 1.7em;
+  margin-left: 1.2em;
+  margin-top: 1em;
   font-weight: 700;
 }
 .s{
@@ -169,8 +175,8 @@ header #menu{
   header #menu{
     margin-right: 4em;
   }
-  header h1{
-    margin-left: 3.5em;
+  header #logo-name{
+    margin-left: 2.9em;
   }
   #welcome-section h1{
     font-size: 2em;

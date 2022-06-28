@@ -16,5 +16,5 @@ I used a lot of dev's on this project. I should apply HTML Semantic for best pra
 
 ## Credits
 
-The design is inspired by : Nithi Pramesti <a href="https://www.behance.net/gallery/93886357/Tribute-Page-Dr-Norman-Borlaug" target="_blank"> Behance </a>
+The design is inspired by : Nithi Pramesti from<a href="https://www.behance.net/gallery/93886357/Tribute-Page-Dr-Norman-Borlaug" target="_blank"> Behance </a>
 

@@ -1,10 +1,10 @@
-## Tribute Page
+# Tribute Page
 
-Tribute Page <a href="https://codepen.io/dennisgocong/full/NWaLmbB" target="_blank">Live Demo</a>
+<a href="https://codepen.io/dennisgocong/full/NWaLmbB" target="_blank">Live Demo</a>
 
-## Objective
+## Project Objective
 
-Build a web that is similar to this: <a href="https://tribute-page.freecodecamp.rocks/" target="_blank"> https://tribute-page.freecodecamp.rocks/ </a>. Give it your own personal style.
+Build a web that is similar to this: <a href="https://tribute-page.freecodecamp.rocks/" target="_blank"> https://tribute-page.freecodecamp.rocks/ </a>.
 
 ## Difficulties and Challenges
 
@@ -12,4 +12,9 @@ I remade the project multiple times because I'm not satified with my UI designs.
 
 ## Note
 
-I used a lot of dev's on this project. I should apply SEO for best practice and avoid using a lot of dev's. Applying different unit type on the same element can cause conflict.
+I used a lot of dev's on this project. I should apply HTML Semantic for best practice and avoid using a lot of dev's. Applying different unit type on the same element can cause conflict.
+
+## Credits
+
+The design is inspired by : <a href="https://www.behance.net/gallery/93886357/Tribute-Page-Dr-Norman-Borlaug" target="_blank"> Nithi Pramesti </a>.
+

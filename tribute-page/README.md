@@ -1,10 +1,10 @@
-# Tribute Page
+## Tribute Page
 
 <a href="https://codepen.io/dennisgocong/full/NWaLmbB" target="_blank">Live Demo</a>
 
 ## Project Objective
 
-Build a web that is similar to this: <a href="https://tribute-page.freecodecamp.rocks/" target="_blank"> https://tribute-page.freecodecamp.rocks/ </a>.
+Build a web that is similar to this: <a href="https://tribute-page.freecodecamp.rocks/" target="_blank"> https://tribute-page.freecodecamp.rocks/ </a>
 
 ## Difficulties and Challenges
 
@@ -16,5 +16,5 @@ I used a lot of dev's on this project. I should apply HTML Semantic for best pra
 
 ## Credits
 
-The design is inspired by : <a href="https://www.behance.net/gallery/93886357/Tribute-Page-Dr-Norman-Borlaug" target="_blank"> Nithi Pramesti </a>.
+The design is inspired by : Nithi Pramesti <a href="https://www.behance.net/gallery/93886357/Tribute-Page-Dr-Norman-Borlaug" target="_blank"> Behance </a>
 
